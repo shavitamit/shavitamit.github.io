@@ -1,0 +1,7 @@
+<nav class="navbar" ng-controller="NavController as nav">
+    <ul class="nav">
+        <li ng-repeat="(key,value) in pages">
+            <a ng-href="{{value}}" ng-class="{active: isActive(key)}">{{key}}</a>
+        </li>
+    </ul>
+</nav>

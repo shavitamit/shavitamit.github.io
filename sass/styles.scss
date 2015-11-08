@@ -1,0 +1,36 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$color1: #312c32;
+$color2: #98dafc;
+$color3: #daad86;
+$color4: white ;
+
+body {
+	background: $color1 ;
+	color: $color4; 
+}
+
+a {
+	color: $color4; 
+	text-decoration: none; 
+
+	&.active {
+		color: black !important;
+	}
+}
+
+#pagewrap {
+	margin: 10px auto; 
+	width: 900px; 
+	border: solid 1px red; 
+}
+
+#page-view {
+	border: solid 2px white; 
+	height: 100px; 
+}

@@ -1,7 +1,31 @@
-<title>
-    Amit Shavit's Personal Website
-</title>
-<center>
-    <br/><br/><br/><br/><br/><br/><br/><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This site is under construction, please check back later.  Updated Nov. 6, 2015.
-</center>
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Amit Shavit's Personal Website</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-sanitize.min.js"></script>
+  
+  <script src="scripts.js"></script>
+</head>
+<body ng-controller="MainController as main">
+
+    <div id="pagewrap">
+
+        <header>
+          <div ng-include="'nav.html'"></div>
+        </header>
+
+
+        <div id="page-view">
+            <div ng-view></div>
+        </div>
+
+    </div><!-- pagewrap -->
+
+</body>
+</html>
