@@ -4,33 +4,173 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3" ;
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 
 $color1: #312c32;
 $color2: #98dafc;
 $color3: #daad86;
 $color4: white ;
 
+/*
+	Basics
+*/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*----------------------------------------------------*/
+
 body {
-	background: $color1 ;
-	color: $color4; 
+	// background: $color1 ;
+	background: url('../images/bg.png') repeat; 
+	font-family: 'Montserrat', sans-serif;
 }
 
-a {
-	color: $color4; 
-	text-decoration: none; 
+h1, h2, h3, h4 { font-weight: bold; }
 
-	&.active {
-		color: black !important;
-	}
-}
+h1.space, h2.space, h3.space { margin-bottom: 15px; }
 
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
 #pagewrap {
 	margin: 10px auto; 
-	width: 900px; 
-	border: solid 1px red; 
+	width: 850px; 
+	background: $color4; 
+	//@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+	border: solid 1px black ; 
 }
 
 #page-view {
-	border: solid 2px white; 
-	height: 100px; 
+	min-height: 100px; 
 }
+
+/*
+	Header and Navigation
+*/
+header {
+	height: 30px; 
+	padding-left: 15px; 
+	padding-top: 15px; 
+	margin-bottom: 15px; 
+
+	// Navigation
+	nav {
+		li {
+			display: block; 
+			float: left; 
+			margin-right: 15px; 
+		}
+		a {
+			color: black; 
+			font-weight: bold; 
+			text-decoration: none; 
+
+			&:hover {
+				color: #03c; 
+				transition: color 0.2s linear;
+			}
+
+			&.active {
+				color: #03c; 
+			}
+		}
+	}
+}
+
+/*
+	Sections
+*/
+
+.section {
+
+	border-top: solid 1px #ccc; 
+	padding: 15px; 
+	width: 100% ;
+
+	a {
+		color: #03c; 
+		text-decoration: none; 
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+
+	}
+
+	ul {
+
+		margin-top: 15px; 
+		list-style: square; 
+
+		li {
+			margin-left: 30px; 
+			margin-bottom: 15px; 
+		}
+	}
+
+	.align-left {
+		float: left;
+		width: 600px; 
+	}
+
+	.align-right {
+		float: right; 
+	}
+
+	img {
+		border: solid 1px black; 
+		// @include box-shadow();
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

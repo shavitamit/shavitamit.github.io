@@ -1,7 +1,58 @@
-<title>
-    Amit Shavit's Personal Website
-</title>
-<center>
-    <br/><br/><br/><br/><br/><br/><br/><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This site is under construction, please check back later.  Updated Nov. 6, 2015.
-</center>
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Amit Shavit's Personal Website</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-sanitize.min.js"></script>
+  
+  <script src="js/scripts.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33097417-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+    </script>
+    <!-- END Google Analytics -->
+
+</head>
+<body ng-controller="MainController as main">
+
+    <div id="pagewrap">
+
+        <header class="clearfix">
+          <div ng-include="'nav.html'"></div>
+          <div class="clearfix clear"></div>
+        </header>
+
+        <div id="page-view">
+            <div ng-view></div>
+        </div>
+
+        <footer>
+          <div class="section clearfix">
+            <div class="align-left">
+              <p>Last Modified on November 8, 2015</p>
+            </div>
+
+            <div class="align-right">
+              <a href="mailto:shavitamit@gmail.com" title="Email me!">email me</a>
+            </div>
+          </div>
+        </footer>
+
+    </div><!-- pagewrap -->
+
+</body>
+</html>

@@ -63,46 +63,6 @@ app.controller('NavController', ['$scope', '$route', function($scope, $route) {
 }]);
 
 
-/*
-app.controller('NavController', ['$scope', '$sce', '$route', '$location', function($scope, $sce, $route, $location) {
-
-	$scope.pages = {
-		'home' : '#/',
-		'resume/cv' : '#/resume',
-		'publications' : '#/publications',
-		'contact' : '#/contact'
-	};
-
-
-	$scope.getClass = function(page) {
-		// if ($route.current.activetab == page)
-		// 	return 'active' ;
-
-		console.log(('/' + page) === $location.path());
-
-		if (('/' + page) === $location.path())
-			// return 'active';
-			return true;
-		else
-			return false;
-	};
-
-	$scope.listPages = function() {
-		ret = '' ;
-
-		for (key in pages) {
-			// ret += '<li><a href="' + pages[key] + '" ng-class="' + $scope.getClass(key) + '">' + key + '</a></li>' ;
-			ret += '<li><a href="' + pages[key] + '" ng-class="{active:' + $scope.getClass(key) + '}">' + key + '</a></li>' ;
-			// ret += '<li><a href="' + pages[key] + '" ng-class="{active: $route.current.activetab == ' + key + '">' + key + '</a></li>' ;
-		}
-
-		return ret
-	};
-
-	$scope.pages = $sce.trustAsHtml($scope.listPages()) ;
-	
-
-}]); */
 
 
 
@@ -112,6 +72,10 @@ app.controller('HomeController', function($scope) {
 	$scope.message = 'Home Page' ;
 	
 });
+
+// app.controller('FooterController', function($scope) {
+// 	$scope.lastModified = "Copy" ;
+// });
 
 app.controller('AboutController', function($scope) {
 	
