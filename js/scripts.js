@@ -1,3 +1,4 @@
+// var app = angular.module('app',['ngRoute','ngSanitize','ngAnimate']) ;
 var app = angular.module('app',['ngRoute','ngSanitize']) ;
 
 app.config(function($routeProvider) {
