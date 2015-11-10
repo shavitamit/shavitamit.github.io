@@ -142,6 +142,11 @@ h3 {
 }
 
 /* line 55, ../sass/styles.scss */
+em {
+  font-style: italic;
+}
+
+/* line 57, ../sass/styles.scss */
 #pagewrap {
   margin: 10px auto;
   width: 850px;
@@ -149,7 +154,7 @@ h3 {
   border: solid 1px black;
 }
 
-/* line 63, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 #page-view {
   min-height: 100px;
 }
@@ -157,73 +162,73 @@ h3 {
 /*
 	Header and Navigation
 */
-/* line 70, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 header {
   height: 30px;
   padding-left: 15px;
   padding-top: 15px;
   margin-bottom: 15px;
 }
-/* line 78, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 header nav li {
   display: block;
   float: left;
   margin-right: 15px;
 }
-/* line 83, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 header nav a {
-  color: black;
+  color: #03c;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 88, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 header nav a:hover {
-  color: #03c;
+  color: black;
   transition: color 0.2s linear;
 }
-/* line 93, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 header nav a.active {
-  color: #03c;
+  color: black;
 }
 
 /*
 	Sections
 */
-/* line 104, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .section {
   border-top: solid 1px #ccc;
   padding: 15px;
   width: 100%;
 }
-/* line 110, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .section a {
   color: #03c;
   text-decoration: none;
 }
-/* line 114, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .section a:hover {
   text-decoration: underline;
 }
-/* line 121, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 .section ul {
   margin-top: 15px;
   list-style: square;
 }
-/* line 126, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .section ul li {
   margin-left: 30px;
   margin-bottom: 15px;
 }
-/* line 132, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .section .align-left {
   float: left;
   width: 600px;
 }
-/* line 137, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .section .align-right {
   float: right;
 }
-/* line 141, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .section img {
   border: solid 1px black;
 }
