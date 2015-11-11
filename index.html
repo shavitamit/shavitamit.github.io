@@ -29,12 +29,23 @@
     <!-- END Google Analytics -->
 
 </head>
+
 <body ng-controller="MainController as main">
 
     <div id="pagewrap">
 
         <header class="clearfix">
           <div ng-include="'nav.html'"></div>
+
+          <noscript>
+            <nav class="navbar ng-scope" ng-controller="NavController as nav">
+                <ul class="nav">
+                    <li ng-repeat="(key,value) in pages" class="ng-scope">
+                    <a ng-href="#/" ng-class="{active: isActive(key)}" class="ng-binding" href="#/">home</a>
+                </ul>
+            </nav>
+          </noscript>
+
           <div class="clearfix clear"></div>
         </header>
 
