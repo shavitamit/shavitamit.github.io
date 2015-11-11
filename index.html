@@ -37,15 +37,15 @@
         <header class="clearfix">
           <div ng-include="'nav.html'"></div>
 
-          <!-- For those that have JS disabled -->
-          <noscript>
-            <nav class="navbar ng-scope" ng-controller="NavController as nav">
-                <ul class="nav">
-                    <li ng-repeat="(key,value) in pages" class="ng-scope">
-                    <a ng-href="#/" ng-class="{active: isActive(key)}" class="ng-binding" href="#/">home</a>
-                </ul>
-            </nav>
-          </noscript>
+            <!-- For those that have JS disabled -->
+            <noscript>
+              <nav class="navbar ng-scope" ng-controller="NavController as nav">
+                  <ul class="nav">
+                      <li ng-repeat="(key,value) in pages" class="ng-scope">
+                      <a ng-href="#/" ng-class="{active: isActive(key)}" class="ng-binding" href="#/">home</a>
+                  </ul>
+              </nav>
+            </noscript>
 
           <div class="clearfix clear"></div>
         </header>
@@ -57,7 +57,7 @@
             <noscript>
               <div class="section ng-scope">
                 <div class="align-left">
-                  <h1 style="color:red">This website relies <em>heavily</em> on Javascript.  Please consider turning it on.</h1>
+                  <h1 style="color:red; margin-bottom: 15px;">This website relies <em>heavily</em> on Javascript.  Please consider turning it on.</h1>
                   <h1>Amit Shavit</h1>
                   <ul>
                     <li><strong>Current Affiliation (2015 — Present):</strong> Technology Associate<br>at <a href="http://thomsonreuters.com" target="_blank">Thomson Reuters</a></li>
