@@ -6,6 +6,7 @@
 @import "compass/reset";
 @import "compass/css3" ;
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans); 
 
 
 $color1: #312c32;
@@ -42,7 +43,12 @@ html {
 body {
 	// background: $color1 ;
 	background: url('../images/bg.png') repeat; 
-	font-family: 'Montserrat', sans-serif;
+	// font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+li {
+	line-height: 1.3em; 
 }
 
 h1, h2, h3, h4 { font-weight: bold; }

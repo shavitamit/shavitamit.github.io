@@ -3,6 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 /* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -71,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
 	Basics
 */
-/* line 19, ../sass/styles.scss */
+/* line 20, ../sass/styles.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -81,72 +82,77 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 0;
 }
 
-/* line 27, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 .clearfix {
   display: inline-block;
 }
 
 /* start commented backslash hack \*/
-/* line 29, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 * html .clearfix {
   height: 1%;
 }
 
-/* line 30, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .clearfix {
   display: block;
 }
 
 /* close commented backslash hack */
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 34, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 37, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 /*----------------------------------------------------*/
-/* line 42, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 body {
   background: url("../images/bg.png") repeat;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 50, ../sass/styles.scss */
+li {
+  line-height: 1.3em;
+}
+
+/* line 54, ../sass/styles.scss */
 h1, h2, h3, h4 {
   font-weight: bold;
 }
 
-/* line 50, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 h1.space, h2.space, h3.space {
   margin-bottom: 15px;
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 h1 {
   font-size: 1.5em;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 h2 {
   font-size: 1.3em;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 h3 {
   font-size: 1.1em;
 }
 
-/* line 55, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 em {
   font-style: italic;
 }
 
-/* line 57, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 #pagewrap {
   margin: 10px auto;
   width: 850px;
@@ -154,7 +160,7 @@ em {
   border: solid 1px black;
 }
 
-/* line 65, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 #page-view {
   min-height: 100px;
 }
@@ -162,31 +168,31 @@ em {
 /*
 	Header and Navigation
 */
-/* line 72, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 header {
   height: 30px;
   padding-left: 15px;
   padding-top: 15px;
   margin-bottom: 15px;
 }
-/* line 80, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 header nav li {
   display: block;
   float: left;
   margin-right: 15px;
 }
-/* line 85, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 header nav a {
   color: #03c;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 90, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 header nav a:hover {
   color: black;
   transition: color 0.2s linear;
 }
-/* line 95, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 header nav a.active {
   color: black;
 }
@@ -194,46 +200,46 @@ header nav a.active {
 /*
 	Sections
 */
-/* line 106, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .section {
   border-top: solid 1px #ccc;
   padding: 15px;
   width: 100%;
 }
-/* line 112, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 .section a {
   color: #03c;
   text-decoration: none;
 }
-/* line 116, ../sass/styles.scss */
+/* line 122, ../sass/styles.scss */
 .section a:hover {
   text-decoration: underline;
 }
-/* line 123, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .section ul {
   margin-top: 15px;
   list-style: square;
 }
-/* line 128, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .section ul li {
   margin-left: 30px;
   margin-bottom: 15px;
 }
-/* line 134, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .section .align-left {
   float: left;
   width: 600px;
 }
-/* line 139, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 .section .align-right {
   float: right;
 }
-/* line 143, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .section img {
   border: solid 1px black;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .ng-enter {
   position: relative;
   z-index: 9999;
@@ -248,7 +254,7 @@ header nav a.active {
   animation: fadein 1s;
 }
 
-/* line 165, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .ng-leave {
   position: absolute;
   background: white;
