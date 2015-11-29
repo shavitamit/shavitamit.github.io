@@ -152,7 +152,13 @@ em {
   font-style: italic;
 }
 
-/* line 63, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
+span.me {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 64, ../sass/styles.scss */
 #pagewrap {
   margin: 10px auto;
   width: 850px;
@@ -160,7 +166,7 @@ em {
   border: solid 1px black;
 }
 
-/* line 71, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 #page-view {
   min-height: 100px;
 }
@@ -168,31 +174,31 @@ em {
 /*
 	Header and Navigation
 */
-/* line 78, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 header {
   height: 30px;
   padding-left: 15px;
   padding-top: 15px;
   margin-bottom: 15px;
 }
-/* line 86, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 header nav li {
   display: block;
   float: left;
   margin-right: 15px;
 }
-/* line 91, ../sass/styles.scss */
+/* line 92, ../sass/styles.scss */
 header nav a {
   color: #03c;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 96, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 header nav a:hover {
   color: black;
   transition: color 0.2s linear;
 }
-/* line 101, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 header nav a.active {
   color: black;
 }
@@ -200,46 +206,46 @@ header nav a.active {
 /*
 	Sections
 */
-/* line 112, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .section {
   border-top: solid 1px #ccc;
   padding: 15px;
   width: 100%;
 }
-/* line 118, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .section a {
   color: #03c;
   text-decoration: none;
 }
-/* line 122, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 .section a:hover {
   text-decoration: underline;
 }
-/* line 129, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .section ul {
   margin-top: 15px;
   list-style: square;
 }
-/* line 134, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 .section ul li {
   margin-left: 30px;
   margin-bottom: 15px;
 }
-/* line 140, ../sass/styles.scss */
+/* line 141, ../sass/styles.scss */
 .section .align-left {
   float: left;
   width: 600px;
 }
-/* line 145, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .section .align-right {
   float: right;
 }
-/* line 149, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .section img {
   border: solid 1px black;
 }
 
-/* line 157, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 .ng-enter {
   position: relative;
   z-index: 9999;
@@ -254,7 +260,7 @@ header nav a.active {
   animation: fadein 1s;
 }
 
-/* line 171, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .ng-leave {
   position: absolute;
   background: white;
