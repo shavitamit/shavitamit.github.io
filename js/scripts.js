@@ -4,7 +4,7 @@ var app = angular.module('app',['ngRoute','ngSanitize']) ;
 app.config(function($routeProvider) {
 
 $routeProvider
-	
+
 	// route for home page
 	.when('/', {
 		templateUrl: 'pages/home.html',
@@ -36,15 +36,15 @@ $routeProvider
 });
 
 app.controller('MainController', function($scope,$route) {
-	
+
 	$scope.message = 'Hello wrold mayne!' ;
-	$scope.$route = $route ; 
+	$scope.$route = $route ;
 
 
 });
 
 app.controller('NavController', ['$scope', '$route', function($scope, $route) {
-	
+
 	$scope.pages = {
 			'home' : '#/',
 			'resume/cv' : '#/resume',
@@ -69,23 +69,19 @@ app.controller('NavController', ['$scope', '$route', function($scope, $route) {
 
 
 app.controller('HomeController', function($scope) {
-	
+
 	$scope.message = 'Home Page' ;
-	
+
 });
 
-// app.controller('FooterController', function($scope) {
-// 	$scope.lastModified = "Copy" ;
-// });
-
 app.controller('AboutController', function($scope) {
-	
+
 	$scope.message = 'About me' ;
 
 });
 
 app.controller('ContactController', function($scope) {
-	
+
 	$scope.message = 'Contact Me' ;
-	
+
 });
