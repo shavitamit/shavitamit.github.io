@@ -6,7 +6,7 @@
 @import "compass/reset";
 @import "compass/css3" ;
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(//fonts.googleapis.com/css?family=Open+Sans); 
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 
 $color1: #312c32;
@@ -42,13 +42,13 @@ html {
 
 body {
 	// background: $color1 ;
-	background: url('../images/bg.png') repeat; 
+	background: url('../images/bg.png') repeat;
 	// font-family: 'Montserrat', sans-serif;
 	font-family: 'Open Sans', sans-serif;
 }
 
 li {
-	line-height: 1.3em; 
+	line-height: 1.3em;
 }
 
 h1, h2, h3, h4 { font-weight: bold; }
@@ -62,45 +62,45 @@ em { font-style: italic; }
 span.me { font-weight: bold; text-decoration: underline;}
 
 #pagewrap {
-	margin: 10px auto; 
-	width: 850px; 
-	background: $color4; 
+	margin: 10px auto;
+	width: 850px;
+	background: $color4;
 	//@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
-	border: solid 1px black ; 
+	border: solid 1px black ;
 }
 
 #page-view {
-	min-height: 100px; 
+	min-height: 100px;
 }
 
 /*
 	Header and Navigation
 */
 header {
-	height: 30px; 
-	padding-left: 15px; 
-	padding-top: 15px; 
-	margin-bottom: 15px; 
+	height: 30px;
+	padding-left: 15px;
+	padding-top: 15px;
+	margin-bottom: 15px;
 
 	// Navigation
 	nav {
 		li {
-			display: block; 
-			float: left; 
-			margin-right: 15px; 
+			display: block;
+			float: left;
+			margin-right: 15px;
 		}
 		a {
-			color: #03c; 
-			font-weight: bold; 
-			text-decoration: none; 
+			color: #03c;
+			font-weight: bold;
+			text-decoration: none;
 
 			&:hover {
-				color: black; 
+				color: black;
 				transition: color 0.2s linear;
 			}
 
 			&.active {
-				color: black; 
+				color: black;
 			}
 		}
 	}
@@ -112,13 +112,13 @@ header {
 
 .section {
 
-	border-top: solid 1px #ccc; 
-	padding: 15px; 
+	border-top: solid 1px #ccc;
+	padding: 15px;
 	width: 100% ;
 
 	a {
-		color: #03c; 
-		text-decoration: none; 
+		color: #03c;
+		text-decoration: none;
 
 		&:hover {
 			text-decoration: underline;
@@ -129,38 +129,38 @@ header {
 
 	ul {
 
-		margin-top: 15px; 
-		list-style: square; 
+		margin-top: 15px;
+		list-style: square;
 
 		li {
-			margin-left: 30px; 
-			margin-bottom: 15px; 
+			margin-left: 30px;
+			margin-bottom: 15px;
 		}
 	}
 
 	.align-left {
 		float: left;
-		width: 600px; 
+		// width: 450px; 
 	}
 
 	.align-right {
-		float: right; 
+		float: right;
 	}
 
 	img {
-		border: solid 1px black; 
+		border: solid 1px black;
 		// @include box-shadow();
 	}
 
 }
 
 
-.ng-enter 		{ 
+.ng-enter 		{
    // -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
     // animation-delay: 2s;
-    
+
     position: relative;
-    z-index: 9999; 
+    z-index: 9999;
 
 	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
 	-moz-animation: fadein 1s; /* Firefox < 16 */
@@ -171,7 +171,7 @@ header {
 
 .ng-leave {
 	position: absolute;
-	background: white; 
+	background: white;
 	z-index: 1;
 
 	-webkit-animation: fadeout 0.3s; /* Safari, Chrome and Opera > 12.1 */
@@ -271,24 +271,3 @@ header {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
