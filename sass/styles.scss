@@ -140,7 +140,7 @@ header {
 
 	.align-left {
 		float: left;
-		// width: 450px; 
+		// width: 450px;
 	}
 
 	.align-right {
@@ -211,6 +211,24 @@ header {
 	100% { transform: translateY(100%) rotateZ(17deg); }
 }
 
+// Fix mobile view
+@media only screen
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .align-left { max-width: 60%; }
+    .section {
+      font-size: 14px;
+
+      ul li {
+        font-size: 14px;
+        line-height: 12px;
+      }
+    }
+
+    .cv > .align-left {
+      max-width: 20%;
+    }
+}
 
 
 @keyframes fadein {

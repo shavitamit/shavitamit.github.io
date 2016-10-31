@@ -330,6 +330,27 @@ header nav a.active {
     transform: translateY(100%) rotateZ(17deg);
   }
 }
+@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 218, ../sass/styles.scss */
+  .align-left {
+    max-width: 60%;
+  }
+
+  /* line 219, ../sass/styles.scss */
+  .section {
+    font-size: 14px;
+  }
+  /* line 222, ../sass/styles.scss */
+  .section ul li {
+    font-size: 14px;
+    line-height: 12px;
+  }
+
+  /* line 228, ../sass/styles.scss */
+  .cv > .align-left {
+    max-width: 20%;
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
