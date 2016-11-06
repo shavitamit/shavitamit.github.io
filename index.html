@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
-    <title>Amit Shavit's Personal Website</title>
+  <title>Amit Shavit's Personal Website</title>
+
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- load angular and angular route via CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-sanitize.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-animate.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-sanitize.min.js"></script> -->
+
+  <script src="js/angular.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/angular-sanitize.js"></script>
 
 
   <script src="js/scripts.js"></script>
 
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33097417-1']);
-    _gaq.push(['_trackPageview']);
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33097417-1']);
+  _gaq.push(['_trackPageview']);
 
-    (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-    </script>
-    <!-- END Google Analytics -->
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  <!-- END Google Analytics -->
 
 </head>
 
 <body ng-controller="MainController as main">
 
-    <div id="pagewrap">
+  <div id="pagewrap">
 
-        <header class="clearfix">
-          <div ng-include="'nav.html'"></div>
+    <header class="clearfix">
+      <div ng-include="'nav.html'"></div>
 
-            <!-- For those that have JS disabled -->
-            <noscript>
-              <nav class="navbar ng-scope" ng-controller="NavController as nav">
-                  <ul class="nav">
-                      <li ng-repeat="(key,value) in pages" class="ng-scope">
-                      <a ng-href="#/" ng-class="{active: isActive(key)}" class="ng-binding" href="#/">home</a>
-                  </ul>
-              </nav>
-            </noscript>
+      <!-- For those that have JS disabled -->
+      <noscript>
+        <nav class="navbar ng-scope" ng-controller="NavController as nav">
+          <ul class="nav">
+            <li ng-repeat="(key,value) in pages" class="ng-scope">
+              <a ng-href="#/" ng-class="{active: isActive(key)}" class="ng-binding" href="#/">home</a>
+            </ul>
+          </nav>
+        </noscript>
 
-          <div class="clearfix clear"></div>
-        </header>
+        <div class="clearfix clear"></div>
+      </header>
 
-        <div id="page-view">
-            <div ng-view></div>
+      <div id="page-view">
+        <div ng-view></div>
 
-            <!-- For those that have JS disabled -->
-            <noscript>
-              <div class="section ng-scope">
-                <div class="align-left">
-                  <h1 style="color:red; margin-bottom: 15px;">This website relies <em>heavily</em> on Javascript.  Please consider turning it on.</h1>
-                  <h1>Amit Shavit</h1>
+        <!-- For those that have JS disabled -->
+        <noscript>
+          <div class="section ng-scope">
+            <div class="align-left">
+              <h1 style="color:red; margin-bottom: 15px;">This website relies <em>heavily</em> on Javascript.  Please consider turning it on.</h1>
+              <h1>Amit Shavit</h1>
+              <ul>
+                <li><strong>Current Affiliation (2015 — Present):</strong> Technology Associate<br>at <a href="http://thomsonreuters.com" target="_blank">Thomson Reuters</a></li>
+                <li><strong>Past Affiliations:</strong>
                   <ul>
-                    <li><strong>Current Affiliation (2015 — Present):</strong> Technology Associate<br>at <a href="http://thomsonreuters.com" target="_blank">Thomson Reuters</a></li>
-                    <li><strong>Past Affiliations:</strong>
-                      <ul>
-                        <li>Ph.D. Candidate in the <a href="http://rrgroup.seas.upenn.edu" target="_blank">Riggleman Group</a> at UPenn (2010-2015)</li>
-                        <li>B.S. Assistant Researcher in the <a href="http://roberts.openwetware.org" target="_blank">Roberts Group</a><br>at UMass Amherst (2006-2010)</li>
-                      </ul></li>
-                    <li><strong>Email:</strong> <a href="mailto:shavitamit@gmail.com">shavitamit@gmail.com</a></li>
-                    <li><strong>Resume:</strong> <a href="files/Amit-Shavit-Resume.pdf" target="_blank">PDF</a></li>
-                    <!-- <li><strong>CV:</strong> <a href="files/Shavit-CV.pdf" target="_blank">PDF</a></li> -->
-                    <li><strong>Social network:</strong> <a href="http://www.linkedin.com/profile/view?id=22888201&amp;trk=tab_pro" target="_blank">LinkedIn</a></li>
-                  </ul>
+                    <li>Ph.D. Candidate in the <a href="http://rrgroup.seas.upenn.edu" target="_blank">Riggleman Group</a> at UPenn (2010-2015)</li>
+                    <li>B.S. Assistant Researcher in the <a href="http://roberts.openwetware.org" target="_blank">Roberts Group</a><br>at UMass Amherst (2006-2010)</li>
+                  </ul></li>
+                  <li><strong>Email:</strong> <a href="mailto:shavitamit@gmail.com">shavitamit@gmail.com</a></li>
+                  <li><strong>Resume:</strong> <a href="files/Amit-Shavit-Resume.pdf" target="_blank">PDF</a></li>
+                  <!-- <li><strong>CV:</strong> <a href="files/Shavit-CV.pdf" target="_blank">PDF</a></li> -->
+                  <li><strong>Social network:</strong> <a href="http://www.linkedin.com/profile/view?id=22888201&amp;trk=tab_pro" target="_blank">LinkedIn</a></li>
+                </ul>
 
-                </div>
-
-                <div class="align-right my-img">
-                  <img src="images/me.png" width="180" alt="Amit Shavit">
-                  <!--<img src="images/me2.jpg" width="180" alt="Amit Shavit" />-->
-                </div>
-
-                <div class="clearfix"></div>
               </div>
-            </noscript>
+
+              <div class="align-right my-img">
+                <img src="images/me.png" width="180" alt="Amit Shavit">
+                <!--<img src="images/me2.jpg" width="180" alt="Amit Shavit" />-->
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </noscript>
 
 
         </div>
@@ -98,7 +103,7 @@
           </div>
         </footer>
 
-    </div><!-- pagewrap -->
+      </div><!-- pagewrap -->
 
-</body>
-</html>
+    </body>
+    </html>
