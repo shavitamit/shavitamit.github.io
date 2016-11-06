@@ -182,7 +182,12 @@ Sections
 // Fix mobile view
 @media only screen
 and (max-device-width: 480px) {
-
+  nav {
+    ul li {
+      font-size: 14px;
+    }
+  }
+  
   #pagewrap {
     width: 100%;
   }
@@ -226,7 +231,7 @@ and (max-device-width: 320px) {
   .section {
     font-size: 12px;
     ul li {
-      font-size: 12px; 
+      font-size: 12px;
     }
   }
 }
