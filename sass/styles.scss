@@ -126,7 +126,11 @@ Sections
   p {
     line-height: 1.2em;
     margin-top: 15px;
-    text-align: justify; 
+    text-align: justify;
+
+    &.footer {
+      margin-top: 0;
+    }
   }
 
   strong { font-weight: bold !important}
