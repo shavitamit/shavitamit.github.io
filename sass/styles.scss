@@ -74,6 +74,13 @@ span.me { font-weight: bold; text-decoration: underline;}
 }
 
 /*
+  FRONT PAGE IMAGE
+*/
+.front-page-image {
+  border-radius: 50%;
+}
+
+/*
 Header and Navigation
 */
 header {
@@ -115,6 +122,21 @@ Sections
   border-top: solid 1px #ccc;
   padding: 15px;
   width: 100% ;
+
+  p {
+    line-height: 1.2em;
+    margin-top: 15px;
+    text-align: justify; 
+  }
+
+  strong { font-weight: bold !important}
+  .bold-and-underline { text-decoration: underline; font-weight: bold; }
+  .line-break {
+    margin: 20px 50px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #ccc;
+  }
 
   a {
     color: #03c;
@@ -187,7 +209,7 @@ and (max-device-width: 480px) {
       font-size: 14px;
     }
   }
-  
+
   #pagewrap {
     width: 100%;
   }
