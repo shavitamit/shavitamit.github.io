@@ -313,55 +313,60 @@ Sections
 
 @media only screen and (max-device-width: 480px) {
   /* line 222, ../sass/styles.scss */
+  #embedded-resume {
+    display: none;
+  }
+
+  /* line 225, ../sass/styles.scss */
   nav ul li {
     font-size: 14px;
   }
 
-  /* line 227, ../sass/styles.scss */
+  /* line 230, ../sass/styles.scss */
   #pagewrap {
     width: 100%;
   }
 
-  /* line 232, ../sass/styles.scss */
+  /* line 235, ../sass/styles.scss */
   .home-page .align-left {
     max-width: 70%;
   }
-  /* line 233, ../sass/styles.scss */
+  /* line 236, ../sass/styles.scss */
   .home-page .align-right {
     max-width: 30%;
   }
-  /* line 234, ../sass/styles.scss */
+  /* line 237, ../sass/styles.scss */
   .home-page .my-img img {
     max-width: 100%;
   }
 
-  /* line 237, ../sass/styles.scss */
+  /* line 240, ../sass/styles.scss */
   .section {
     font-size: 14px;
   }
-  /* line 240, ../sass/styles.scss */
+  /* line 243, ../sass/styles.scss */
   .section ul li {
     font-size: 14px;
     line-height: 14px;
   }
-  /* line 243, ../sass/styles.scss */
+  /* line 246, ../sass/styles.scss */
   .section ul li ul li {
     margin-left: 15px;
   }
 
-  /* line 250, ../sass/styles.scss */
+  /* line 253, ../sass/styles.scss */
   .cv-page .align-left, .contact-page .align-left {
     width: 100%;
     float: none;
     display: block;
     margin: 0 auto;
   }
-  /* line 251, ../sass/styles.scss */
+  /* line 254, ../sass/styles.scss */
   .cv-page img, .contact-page img {
     margin: 0 auto;
     display: block;
   }
-  /* line 252, ../sass/styles.scss */
+  /* line 255, ../sass/styles.scss */
   .cv-page .align-right, .contact-page .align-right {
     clear: both;
     width: 100% !important;
@@ -370,23 +375,23 @@ Sections
     margin-bottom: 15px;
   }
 
-  /* line 257, ../sass/styles.scss */
+  /* line 260, ../sass/styles.scss */
   .contact-page .align-right {
     margin-top: 15px;
     margin-bottom: 0;
   }
 }
 @media only screen and (max-device-width: 320px) {
-  /* line 263, ../sass/styles.scss */
+  /* line 266, ../sass/styles.scss */
   nav ul li {
     font-size: 14px;
   }
 
-  /* line 267, ../sass/styles.scss */
+  /* line 270, ../sass/styles.scss */
   .section {
     font-size: 12px;
   }
-  /* line 269, ../sass/styles.scss */
+  /* line 272, ../sass/styles.scss */
   .section ul li {
     font-size: 12px;
   }

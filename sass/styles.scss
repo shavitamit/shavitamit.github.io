@@ -218,6 +218,9 @@ Sections
 // Fix mobile view
 @media only screen
 and (max-device-width: 480px) {
+
+  #embedded-resume { display: none; }
+
   nav {
     ul li {
       font-size: 14px;
