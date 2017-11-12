@@ -180,6 +180,16 @@ Sections
 
 }
 
+.home-page {
+  .home-summary {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+
+    em { font-style: italic; }
+  }
+}
+
 .cv-page {
   .align-left {
     width: 250px;
