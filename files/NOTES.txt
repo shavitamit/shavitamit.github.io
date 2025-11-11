@@ -1,5 +1,0 @@
-
-  A useful feature here would be to create a symlink (ln -s) to the original
-  CV and resume locations, and have rsync copy the actual files, not the links
-  themselves.
-

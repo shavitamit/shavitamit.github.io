@@ -1,109 +1,120 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
 <head>
   <title>Amit Shavit's Personal Website</title>
-
-  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-
-  <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- load angular and angular route via CDN -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-route.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-sanitize.min.js"></script> -->
-
-  <script src="js/angular.js"></script>
-  <script src="js/angular-route.js"></script>
-  <script src="js/angular-sanitize.js"></script>
-
-
-  <script src="js/scripts.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container {
+      max-width: 900px !important;
+    }
+  </style>
 
   <!-- Google Analytics -->
   <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33097417-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33097417-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
   </script>
   <!-- END Google Analytics -->
-
 </head>
 
-<body ng-controller="MainController as main">
-
-  <div id="pagewrap">
-
-    <header class="clearfix">
-      <div ng-include="'nav.html'"></div>
-
-      <!-- For those that have JS disabled -->
-      <noscript>
-        <nav class="navbar ng-scope" ng-controller="NavController as nav">
-          <ul class="nav">
-            <li ng-repeat="(key,value) in pages" class="ng-scope">
-              <a ng-href="#/" ng-class="{active: isActive(key)}" class="ng-binding" href="#/">home</a>
+<body>
+  <div class="container py-4">
+    <header class="mb-4">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
             </ul>
-          </nav>
-        </noscript>
-
-        <div class="clearfix clear"></div>
-      </header>
-
-      <div id="page-view">
-        <div ng-view></div>
-
-        <!-- For those that have JS disabled -->
-        <noscript>
-          <div class="section ng-scope">
-            <div class="align-left">
-              <h1 style="color:red; margin-bottom: 15px;">This website relies <em>heavily</em> on Javascript.  Please consider turning it on.</h1>
-              <h1>Amit Shavit</h1>
-              <ul>
-                <li><strong>Current Affiliation (2015 — Present):</strong> Technology Associate<br>at <a href="http://thomsonreuters.com" target="_blank">Thomson Reuters</a></li>
-                <li><strong>Past Affiliations:</strong>
-                  <ul>
-                    <li>Ph.D. Candidate in the <a href="http://rrgroup.seas.upenn.edu" target="_blank">Riggleman Group</a> at UPenn (2010-2015)</li>
-                    <li>B.S. Assistant Researcher in the <a href="http://roberts.openwetware.org" target="_blank">Roberts Group</a><br>at UMass Amherst (2006-2010)</li>
-                  </ul></li>
-                  <li><strong>Email:</strong> <a href="mailto:shavitamit@gmail.com">shavitamit@gmail.com</a></li>
-                  <li><strong>Resume:</strong> <a href="files/Amit-Shavit-Resume.pdf" target="_blank">PDF</a></li>
-                  <!-- <li><strong>CV:</strong> <a href="files/Shavit-CV.pdf" target="_blank">PDF</a></li> -->
-                  <li><strong>Social network:</strong> <a href="http://www.linkedin.com/profile/view?id=22888201&amp;trk=tab_pro" target="_blank">LinkedIn</a></li>
-                </ul>
-
-              </div>
-
-              <div class="align-right my-img">
-                <img src="images/me.png" width="180" alt="Amit Shavit">
-                <!--<img src="images/me2.jpg" width="180" alt="Amit Shavit" />-->
-              </div>
-
-              <div class="clearfix"></div>
-            </div>
-          </noscript>
-
-
-        </div>
-
-        <footer>
-          <div class="section clearfix">
-            <div class="align-left">
-              <p class="footer">Last Modified on October 2016</p>
-            </div>
-
-            <div class="align-right">
-              <a href="mailto:shavitamit@gmail.com" title="Email me!">email me</a>
-            </div>
+            <span class="navbar-text ms-auto fw-bold">
+              Amit Shavit, PhD
+            </span>
           </div>
-        </footer>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
 
-      </div><!-- pagewrap -->
+    </header>
 
-    </body>
-    </html>
+   <main>
+
+    <section class="mb-4">
+      <h2>Summary</h2>
+      <p>
+        Data science and AI leader with 10+ years of experience building and deploying machine learning and GenAI
+solutions in production environments. Currently leading dual teams of software engineers and PhD-level
+applied AI engineers. Proven track record translating research into deployed products that drive measurable
+business impact. Strong expertise in leadership, team building, communication, and technical execution across
+the full AI & ML lifecycle.
+      </p>
+    </section>
+  <div class="position-relative">
+    <img src="images/amit-Shavit-Headshot.png"
+         class="img-fluid rounded-circle shadow d-none d-md-block"
+         style="width:250px; height:250px; object-fit:cover; border:2px solid #fff; position:absolute; top:0; right:0; margin:16px;"
+         alt="Amit Shavit">
+    <div style="padding-right:340px;">
+      <h2 class="mt-4">Job History</h2>
+      <ul class="list-unstyled">
+        <strong>Current (2018 &mdash; Present):</strong><br/>
+        <ul>
+          <li class="mt-2">
+            GenAI Technology Lead at <a href="https://fidelity.com" target="_blank">Fidelity Investments</a>
+          </li>
+        </ul>
+        <li class="mt-2">
+          <strong>Past Jobs / Affiliations:</strong>
+          <ul>
+            <li>
+              Senior Data Scientist at <a href="https://thomsonreuters.com" target="_blank">Thomson Reuters</a> (2015-2018)
+            </li>
+            <li>Ph.D. Candidate in the <a href="https://rrgroup.seas.upenn.edu" target="_blank">Riggleman Group</a> at UPenn (2010-2015)</li>
+            <li>B.S. Assistant Researcher in the <a href="#" target="_blank">Roberts Group</a> at UMass Amherst (2006-2010)</li>
+          </ul>
+        </li>
+        <h2 class="mt-4">Contact</h2>
+        <li class="mt-2"><strong>Email:</strong> <a href="mailto:shavitamit@gmail.com">shavitamit@gmail.com</a></li>
+        <li class="mt-2"><strong>Resume:</strong> <a href="files/Amit-Shavit-Resume.pdf" target="_blank">PDF</a></li>
+        <!-- <li><strong>CV:</strong> <a href="files/Shavit-CV.pdf" target="_blank">PDF</a></li> -->
+        <li class="mt-2"><strong>Social network:</strong> <a href="https://www.linkedin.com/in/shavitamit/" target="_blank">LinkedIn</a></li>
+      </ul>
+
+      <!-- Education Section -->
+      <h2 class="mt-4">Education</h2>
+      <ul class="">
+        <li>
+          <strong>2010 &mdash; 2015:</strong> Ph.D. in Chemical and
+          <strong>University of Pennsylvania</strong>, Philadelphia, PA
+        </li>
+        <li class="mt-2">
+          <strong>2006 &mdash; 2010:</strong> B.S. in Chemical Engineering <em>(summa cum laude, highest departmental honors)</em>,
+          <strong>University of Massachusetts Amherst</strong>, Amherst, MA
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+    <div id="footer" class="mt-4"></div>
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(html => { document.getElementById('footer').innerHTML = html; });
+    </script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</body>
+</html>
